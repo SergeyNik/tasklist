@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  liquibase:
+    enabled: true
+    change-log: classpath:db/changelog/db.changelog-master.yaml
+  jpa:
+    properties:
+      hibernate.show_sql: false
+      hibernate:format_sql: false
+      hibernate.jdbc.lob.non_contextual_creation: true
+    hibernate.ddl-auto: none
+  datasource:
+    url: jdbc:tc:postgresql:10.9://localhost/test
+    username: test
+    password: test
+    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
+    name: main
