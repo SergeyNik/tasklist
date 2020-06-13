@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.sergeynik</groupId>
     <artifactId>tasklist</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>tasklist</name>
     <description>TDD + j11</description>
 
